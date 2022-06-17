@@ -1,0 +1,14 @@
+2022-06-17 10:11:23,251 p=3955 u=root n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2022-06-17 10:11:23,516 p=3955 u=root n=ansible | playbook: ec2-instance.yml
+2022-06-17 10:13:07,580 p=3972 u=root n=ansible | playbook: ec2-instance.yml
+2022-06-17 10:13:13,337 p=3978 u=root n=ansible | PLAY [To Create an ec2 instance on AWS] *********************************************************************************************************
+2022-06-17 10:13:13,355 p=3978 u=root n=ansible | TASK [launch an Ec2 insatnce] *******************************************************************************************************************
+2022-06-17 10:13:13,369 p=3978 u=root n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "the connection plugin 'localhost' was not found"}
+2022-06-17 10:13:13,371 p=3978 u=root n=ansible | PLAY RECAP **************************************************************************************************************************************
+2022-06-17 10:13:13,371 p=3978 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2022-06-17 10:14:48,632 p=9299 u=root n=ansible | PLAY [To Create an ec2 instance on AWS] *********************************************************************************************************
+2022-06-17 10:14:48,682 p=9299 u=root n=ansible | TASK [launch an Ec2 insatnce] *******************************************************************************************************************
+2022-06-17 10:14:48,697 p=9299 u=root n=ansible | fatal: [127.0.0.1]: FAILED! => {"msg": "the connection plugin 'localhost' was not found"}
+2022-06-17 10:14:48,700 p=9299 u=root n=ansible | PLAY RECAP **************************************************************************************************************************************
+2022-06-17 10:14:48,700 p=9299 u=root n=ansible | 127.0.0.1                  : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

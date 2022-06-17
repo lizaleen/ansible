@@ -1,0 +1,28 @@
+---
+# This playbook will lauch an ec2 Instance on AWS.
+
+# Header Section:
+
+ - name: To Create an ec2 instance on AWS
+   hosts: localhost
+   gather_facts: false
+
+# Task Section:
+
+   tasks:
+     - name: launch an Ec2 insatnce
+       ec2:
+         instance_type: t2.micro
+         key_name: dev
+         image: ami-0729e439b6769d6ab
+         region: us-east-1
+         count: 1
+         wait: yes
+         assign_public_access: yes
+         vpc_subnet_id: subnet-0ee2daffe3423991d
+         group: launch-wizard-2
+         vars_files:
+           - secrets.yml
+         monitering: no
+         connection: local    
+
